@@ -1,0 +1,62 @@
+/* ===== Theme Variables ===== */
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --text-muted: #999999;
+  --text-subtle: #555555;
+  --text-label: #111111;
+  --accent-dot: #000000;
+  --accent-dot-hover: #333333;
+  --shadow-laptop: rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0a0a0a;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #666666;
+  --text-subtle: #aaaaaa;
+  --text-label: #eeeeee;
+  --accent-dot: #ffffff;
+  --accent-dot-hover: #cccccc;
+  --shadow-laptop: rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Reset & Base ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+

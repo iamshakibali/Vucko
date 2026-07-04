@@ -1,0 +1,101 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 70px;
+  height: 120px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  mix-blend-mode: difference;
+}
+
+.topBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: auto;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.location {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -0.015em;
+  margin-left: 30px;
+}
+
+.topBarRight {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navLinks {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  display: flex;
+  gap: 0;
+  margin-left: -30px;
+}
+
+.navLinks a {
+  color: #fff;
+  transition: opacity 0.2s ease;
+}
+
+.navLinks a:hover {
+  opacity: 0.5;
+}
+
+.navLinks span {
+  margin: 0 2px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.darkToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+}
+
+.darkDot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.darkToggle:hover .darkDot {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    padding: 20px 24px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .topBarRight {
+    gap: 20px;
+  }
+}
